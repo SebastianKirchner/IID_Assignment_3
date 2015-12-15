@@ -13,39 +13,57 @@
     <link rel="stylesheet" href="style/custom.css" type="text/css" >
 </head>
 	<body>
-	  <div class="row">
-      <div class="col-sm-6">Item</div>
-      <div class="col-sm-6">Results</div>
+	<div class="container-fluid row">
+      <div class="col-xs-6 text-right bg-1"><h3>Item</h3></div>
+      <div class="col-xs-6 text-left"><h3>Results</h3></div>
     </div>
-    <h2>What have you lost?</h2>
-    <form id="found_form">
-      <div class="form-group">
-        <label for="description_txtfd">Description</label>
-        <input type="text" class="form-control" id="description_txtfd" placeholder="eg. white Galaxy S3 mini">
-      </div>
-      <div class="form-group">
-        <label for="category_drpd">Category</label>
-        <select class="form-control" id="category_drpd">
-          <option>Elektronik</option>
-          <option>Schlüssel</option>
-          <option>...</option>
-        </select>
-      </div>
-      <h2>Where and When was that?</h2>
-      <div class="form-group">
-        <label for="venue_txtfd">Venue</label>
-        <input type="text" class="form-control" id="venue_txtfd" placeholder="Stadthalle, Arena, ...">
-      </div>
-      <div class="form-group">
-        <label for="date_dtfd">Date</label>
-        <input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
-        <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
-      </div>
-      <div class="form-group">
-        <label for="band_txtfd">Band, Festival</label>
-        <input type="text" class="form-control" id="band_txtfd" placeholder="Ärzte, Frequency, ...">
-      </div>
-      <button type="submit">Show</button>
+    <form class="form-horizontal" role="form">
+        <div class="col-sm-offset-2 col-sm-10">
+            <h3>What have you lost?</h3>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="description">Description:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="description" placeholder="eg. white Galaxy S3 mini">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="category">Category:</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="category_drpd">
+                    <option>Elektronik</option>
+                    <option>Schluessel</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-offset-2 col-sm-10">
+            <h3>Where and When was that?</h3>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="venue">Venue:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="venue" placeholder="Stadthalle, Arena, ...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="date_dtfd">Date:</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
+                <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="band">Band,Festival:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="band" placeholder="Aerzte, Frequency, ...">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <a href="lost.html" class="btn bg-1" role="button"><h3>SHOW</h3></a>
+            </div>
+        </div>
     </form>
 	</body>
 </html>

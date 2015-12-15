@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Template IID3</title>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css" >
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/custom.css" type="text/css" >
+</head>
+	<body>
+	  <div class="row">
+      <div class="col-sm-6">Item</div>
+      <div class="col-sm-6">Results</div>
+    </div>
+    <h2>What have you lost?</h2>
+    <form id="found_form">
+      <div class="form-group">
+        <label for="description_txtfd">Description</label>
+        <input type="text" class="form-control" id="description_txtfd" placeholder="eg. white Galaxy S3 mini">
+      </div>
+      <div class="form-group">
+        <label for="category_drpd">Category</label>
+        <select class="form-control" id="category_drpd">
+          <option>Elektronik</option>
+          <option>Schlüssel</option>
+          <option>...</option>
+        </select>
+      </div>
+      <h2>Where and When was that?</h2>
+      <div class="form-group">
+        <label for="venue_txtfd">Venue</label>
+        <input type="text" class="form-control" id="venue_txtfd" placeholder="Stadthalle, Arena, ...">
+      </div>
+      <div class="form-group">
+        <label for="date_dtfd">Date</label>
+        <input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
+        <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
+      </div>
+      <div class="form-group">
+        <label for="band_txtfd">Band, Festival</label>
+        <input type="text" class="form-control" id="band_txtfd" placeholder="Ärzte, Frequency, ...">
+      </div>
+      <button type="submit">Show</button>
+    </form>
+	</body>
+</html>

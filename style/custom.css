@@ -1,1 +1,15 @@
 /*Custom Style*/
+
+.bg-1{
+	background-color: #ffa64d; /* orange */
+	color: #ffffff;
+}
+
+.bg-2 {
+    color: #ffa64d;
+}
+
+.padding-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}

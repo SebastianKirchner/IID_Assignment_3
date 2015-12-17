@@ -9,6 +9,9 @@
     border: 0;
 	font-size: 2.5em;
 	font-weight: bold;
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:60px;
 }
 
 .btn_submit{
@@ -23,12 +26,9 @@
 	color: #ffffff;
 	position: relative;
 	top: 80%;
-
-	/*height:200px;
-	line-height: 200px;
-	box-sizing: border-box;
-	font-size:50px;*/
-
+	-webkit-border-radius:60px;
+	-moz-border-radius:60px;
+	border-radius:60px;
 }
 
 .btn_lost{

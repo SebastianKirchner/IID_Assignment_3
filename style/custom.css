@@ -23,6 +23,12 @@
 	color: #ffffff;
 	position: relative;
 	top: 80%;
+
+	/*height:200px;
+	line-height: 200px;
+	box-sizing: border-box;
+	font-size:50px;*/
+
 }
 
 .btn_lost{
@@ -104,4 +110,9 @@
     .col-sm-10 {
       text-align: center;
     }
+}
+
+.form-horizontal .control-label {
+	text-align: right;
+	padding-top: 6px;
 }

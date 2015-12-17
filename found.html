@@ -14,38 +14,52 @@
 </head>
   <body>
     <div class="row">
-      <div class="col-sm-6">Item</div>
-      <div class="col-sm-6">Contact</div>
+      <div class="col-xs-6">Item</div>
+      <div class="col-xs-6">Contact</div>
     </div>
-    <h2>What have you found?</h2>
-    <form id="found_form">
+	<div class="col-xs-offset-2 col-xs-10">
+		<h3>What have you found?</h3>
+	</div>
+    <form id="found_form" class="form-horizontal">
       <div class="form-group">
-        <label for="description_txtfd">Description</label>
-        <input type="text" class="form-control" id="description_txtfd" placeholder="eg. white Galaxy S3 mini">
+        <label for="description_txtfd" class="col-xs-3 control-label">Description</label>
+		<div class="col-xs-8">
+			<input type="text" class="form-control" id="description_txtfd" placeholder="eg. white Galaxy S3 mini">
+		</div>
       </div>
       <div class="form-group">
-        <label for="category_drpd">Category</label>
-        <select class="form-control" id="category_drpd">
-          <option>Elektronik</option>
-          <option>Schlüssel</option>
-          <option>...</option>
-        </select>
+        <label for="category_drpd" class="col-xs-3 control-label">Category</label>
+		<div class="col-xs-8">
+			<select class="form-control" id="category_drpd">
+			  <option>Elektronik</option>
+			  <option>Schlüssel</option>
+			  <option>...</option>
+			</select>
+		</div>
       </div>
-      <h2>Where and When was that?</h2>
+	  <div class="col-xs-offset-2 col-xs-10">
+		<h3>Where and When was that?</h3>
+	  </div>
       <div class="form-group">
-        <label for="venue_txtfd">Venue</label>
-        <input type="text" class="form-control" id="venue_txtfd" placeholder="Stadthalle, Arena, ...">
+        <label for="venue_txtfd" class="col-xs-3 control-label">Venue</label>
+		<div class="col-xs-8">
+			<input type="text" class="form-control" id="venue_txtfd" placeholder="Stadthalle, Arena, ...">
+		</div>
       </div>
       <div class="form-group">
-        <label for="date_dtfd">Date</label>
-        <input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
+        <label for="date_dtfd" class="col-xs-3 control-label">Date</label>
+		<div class="col-xs-8">
+			<input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
+		</div>
         <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
       </div>
       <div class="form-group">
-        <label for="band_txtfd">Band, Festival</label>
-        <input type="text" class="form-control" id="band_txtfd" placeholder="Ärzte, Frequency, ...">
+        <label for="event_txtfd" class="col-xs-3 control-label">Event</label>
+		<div class="col-xs-8">
+			<input type="text" class="form-control" id="event_txtfd" placeholder="Ärzte, Frequency, ...">
+		</div>
       </div>
-      <button type="submit">Continue</button>
+		<a href="found_contact.html" class="btn btn-block btn-1" role="button">CONTINUE</a>
     </form>
   </body>
 </html>

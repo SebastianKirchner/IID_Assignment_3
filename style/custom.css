@@ -1,22 +1,56 @@
 /*Custom Style*/
 
-.bg-1{
+
+.btn_index{
+	font-family: Sans-serif;
+    height: 3.5em;
+    width: 9em;
+    text-align: center;
+    border: 0;
+	font-size: 2.5em;
+	font-weight: bold;
+	border-radius: 40%;
+	
+}
+
+.btn_lost{
 	background-color: #ffa64d; /* orange */
 	color: #ffffff;
 }
 
+.btn_lost:hover{
+	color: #ffffff;
+}
+
+.btn_found{
+	background-color: #ffffff;
+    color: #ffa64d;
+}
+
+.btn_found:hover{
+    color: #ffa64d;
+}
+
+.bg-1{
+	background-color: #ffa64d; /* orange */
+	color: #ffffff;
+	height: 50vh;
+	vertical-align: center;
+	margin: auto;
+	padding: auto;
+}
+
 .bg-2 {
     color: #ffa64d;
+	height: 50vh;
+	vertical-align: center;
+	margin-top: auto;
+	padding: auto;
 }
 
-.bg-3 {
-    background-color: #ffffff;
-    color: #ffa64d;
-}
 
 .padding-90 {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 33%;
 }
 
 .padding-30 {

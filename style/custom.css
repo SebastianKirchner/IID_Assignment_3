@@ -87,6 +87,16 @@ BACKGROUND
 	padding: auto;
 }
 
+.bg_color{
+	background-color: #ffa64d; /* orange */
+	color: #ffffff;
+}
+
+.bg_no_color{
+	background-color: #ffffff; /* orange */
+	color: #ffa64d;
+}
+
 /*************
 
 TEXTS 
@@ -108,12 +118,23 @@ TEXTS
 	height: 10em;
 }
 
+.form_header{
+	color: #ffa64d;
+}
+
+.found_item{
+	
+}
 
 /*************
 
 PADDING 
 
 *************/
+
+.margin_top_50{
+	margin-top: 50px;
+}
 
 .padding-90 {
     padding-top: 33%;

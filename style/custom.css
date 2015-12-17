@@ -9,8 +9,20 @@
     border: 0;
 	font-size: 2.5em;
 	font-weight: bold;
-	border-radius: 40%;
-	
+}
+
+.btn_submit{
+	font-family: Sans-serif;
+    height: 3em;
+    width: 7em;
+    text-align: center;
+    border: 0;
+	font-size: 3em;
+	font-weight: bold;
+	background-color: #ffa64d; /* orange */
+	color: #ffffff;
+	position: relative;
+	top: 80%;
 }
 
 .btn_lost{
@@ -20,6 +32,14 @@
 
 .btn_lost:hover{
 	color: #ffffff;
+}
+
+.credits{
+	position: relative;
+	top: 30%;
+	font-family: Sans-serif;
+	font-size: 3em;
+	
 }
 
 .btn_found{

@@ -1,6 +1,12 @@
 /*Custom Style*/
 
 
+/*************
+
+BUTTONS 
+
+*************/
+
 .btn_index{
 	font-family: Sans-serif;
     height: 3.5em;
@@ -24,11 +30,13 @@
 	font-weight: bold;
 	background-color: #ffa64d; /* orange */
 	color: #ffffff;
-	position: relative;
-	top: 80%;
 	-webkit-border-radius:60px;
 	-moz-border-radius:60px;
 	border-radius:60px;
+}
+
+.btn_submit:hover{
+	color: #ffffff;
 }
 
 .btn_lost{
@@ -40,12 +48,10 @@
 	color: #ffffff;
 }
 
-.credits{
-	position: relative;
-	top: 30%;
-	font-family: Sans-serif;
-	font-size: 3em;
-	
+.btn_container{
+	position: absolute;
+	bottom: 10%;
+	left: 19%;
 }
 
 .btn_found{
@@ -56,6 +62,13 @@
 .btn_found:hover{
     color: #ffa64d;
 }
+
+
+/*************
+
+BACKGROUND 
+
+*************/
 
 .bg-1{
 	background-color: #ffa64d; /* orange */
@@ -74,6 +87,33 @@
 	padding: auto;
 }
 
+/*************
+
+TEXTS 
+
+*************/
+
+.credits{
+	position: relative;
+	top: 30%;
+	font-family: Sans-serif;
+	font-size: 3em;
+}
+
+.description_cont{
+	margin-top: 15%;
+}
+
+.contact_info{
+	height: 10em;
+}
+
+
+/*************
+
+PADDING 
+
+*************/
 
 .padding-90 {
     padding-top: 33%;

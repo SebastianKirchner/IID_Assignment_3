@@ -3,6 +3,10 @@
 .bg-1{
 	background-color: #ffa64d; /* orange */
 	color: #ffffff;
+	height:200px;
+	line-height: 200px;
+	box-sizing: border-box;
+	font-size:50px;
 }
 
 .bg-2 {
@@ -50,4 +54,9 @@
     .col-sm-10 {
       text-align: center;
     }
+}
+
+.form-horizontal .control-label {
+	text-align: right;
+	padding-top: 6px;
 }

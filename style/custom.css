@@ -127,6 +127,11 @@ TEXTS
 	
 }
 
+.jumbotron-custom {
+    border-style: solid;
+    border-color: #b1db87;
+}
+
 /*************
 
 PADDING 
@@ -152,6 +157,10 @@ PADDING
     font-size: 16px;
 }
 
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
 .padding-top-70 {
     padding-top: 70px;
 }
@@ -160,8 +169,25 @@ PADDING
     padding-top: 30px;
 }
 
+.padding-top-10 {
+    padding-top: 10px;
+}
+
 .padding-right {
     padding-right: 90px;
+}
+
+.margin-left-20 {
+    margin-left: 20px
+}
+
+.margin-right-left {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
 }
 
 .glyphicon-custom {

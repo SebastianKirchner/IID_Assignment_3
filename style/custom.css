@@ -1,5 +1,13 @@
 /*Custom Style*/
 
+body{
+	font-size:130%;
+	background-color:#f9f9f9;
+}
+
+h3{
+	font-size:2.3em;
+}
 
 
 /*************
@@ -16,24 +24,28 @@ BUTTONS
     border: 0;
 	font-size: 2.5em;
 	font-weight: bold;
-	-webkit-border-radius:60px;
-	-moz-border-radius:60px;
-	border-radius:60px;
+	-webkit-border-radius:14px;
+	-moz-border-radius:14px;
+	border-radius:14px;
 }
 
 .btn_submit{
 	font-family: Sans-serif;
-    height: 3em;
-    width: 7em;
+    height: 2.5em;
     text-align: center;
     border: 0;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: bold;
-	background-color: #ffa64d; /* orange */
+	background-color: #FFC000; /* orange */
 	color: #ffffff;
-	-webkit-border-radius:60px;
-	-moz-border-radius:60px;
-	border-radius:60px;
+	-webkit-border-radius:14px;
+	-moz-border-radius:14px;
+	border-radius:14px;
+	margin-left: -4px;
+}
+
+.no_left_margin{
+	margin-left: 0px !important;
 }
 
 .btn_submit:hover{
@@ -41,7 +53,7 @@ BUTTONS
 }
 
 .btn_lost{
-	background-color: #ffa64d; /* orange */
+	background-color: #FFC000; /* orange */
 	color: #ffffff;
 }
 
@@ -49,10 +61,10 @@ BUTTONS
 	color: #ffffff;
 }
 
-.btn_container{
-	position: absolute;
-	bottom: 10%;
-	left: 19%;
+.btn_container {
+	position: fixed;
+	top: 615px;
+	left: 0;
 }
 
 .btn_found{
@@ -72,7 +84,7 @@ BACKGROUND
 *************/
 
 .bg-1{
-	background-color: #ffa64d; /* orange */
+	background-color: #FFC000; /* orange */
 	color: #ffffff;
 	height: 50vh;
 	vertical-align: center;
@@ -81,7 +93,7 @@ BACKGROUND
 }
 
 .bg-2 {
-    color: #ffa64d;
+    color: #FFC000;
 	height: 50vh;
 	vertical-align: center;
 	margin-top: auto;
@@ -89,14 +101,27 @@ BACKGROUND
 }
 
 .bg_color{
-	background-color: #ffa64d; /* orange */
+	background-color: #FFC000; /* orange */
 	color: #ffffff;
 }
 
 .bg_no_color{
-	background-color: #ffffff; /* orange */
-	color: #ffa64d;
+	background-color: #f9f9f9;
+	color: #FFC000;
 }
+
+/*************
+
+FORM INPUT 
+
+*************/
+
+.form_box{
+	height: 2.3em;
+	font-size: 1.8em;
+	margin:-5px;
+}
+
 
 /*************
 
@@ -120,7 +145,7 @@ TEXTS
 }
 
 .form_header{
-	color: #ffa64d;
+	color: #FFC000;
 }
 
 .found_item{
@@ -129,7 +154,7 @@ TEXTS
 
 .jumbotron-custom {
     border-style: solid;
-    border-color: #b1db87;
+    border-color: #71CD71;
 }
 
 /*************
@@ -213,33 +238,33 @@ FOUND (green)
 *************/
 
 .green_bg{
-	background-color: #b1db87; 	
+	background-color: #70AD47; 	
 	color: #ffffff;
 }
 
 .green_text{
-	color: #b1db87; 	
+	color: #70AD47; 	
 }
 
 /*************
 
-INDEX (green) 
+INDEX (b) 
 
 *************/
 
 .index_found{
-	color: #98acba;
+	color: #5B9BD5;
 }
 
 .index_found:hover{
-	color: #98acba;
+	color: #5B9BD5;
 }
 
 .index_lost{
-	background-color: #98acba;
+	background-color: #5B9BD5;
 }
 
 
 .index_bg{
-	background-color: #98acba;
+	background-color: #5B9BD5;
 }

@@ -11,55 +11,59 @@
     <link rel="stylesheet" href="style/custom.css" type="text/css" >
 </head>
   <body>
-    <div class="row">
-      <div class="col-xs-6 text-center"><h3>Item</h3></div>
+	<div class="row">
+      <div class="col-xs-6 text-center green_text"><h3>Item</h3></div>
       <div class="col-xs-6 text-center green_bg" onclick="location.href='found_contact.html'"><h3>Contact</h3></div>
     </div>
-	<div class="col-xs-offset-2 col-xs-10 margin_top_50">
-		<h3 class="form_header green_text">What have you found?</h3>
-	</div>
-    <form id="found_form" class="form-horizontal">
-      <div class="form-group">
-        <label for="description_txtfd" class="col-xs-3 control-label">Description</label>
-		<div class="col-xs-8">
-			<input type="text" class="form-control" id="description_txtfd" placeholder="eg. white Galaxy S3 mini">
-		</div>
-      </div>
-      <div class="form-group">
-        <label for="category_drpd" class="col-xs-3 control-label">Category</label>
-		<div class="col-xs-8">
-			<select class="form-control" id="category_drpd">
-			  <option>Elektronik</option>
-			  <option>Schlüssel</option>
-			  <option>...</option>
-			</select>
-		</div>
-      </div>
-	  <div class="col-xs-offset-2 col-xs-10 margin_top_50">
-		<h3 class="form_header green_text">Where and When was that?</h3>
-	  </div>
-      <div class="form-group">
-        <label for="venue_txtfd" class="col-xs-3 control-label">Venue</label>
-		<div class="col-xs-8">
-			<input type="text" class="form-control" id="venue_txtfd" placeholder="Stadthalle, Arena, ...">
-		</div>
-      </div>
-      <div class="form-group">
-        <label for="date_dtfd" class="col-xs-3 control-label">Date</label>
-		<div class="col-xs-8">
-			<input type="date" class="form-control" id="date_dtfd" max="2015-12-18">
-		</div>
-        <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
-      </div>
-      <div class="form-group">
-        <label for="event_txtfd" class="col-xs-3 control-label">Event</label>
-		<div class="col-xs-8">
-			<input type="text" class="form-control" id="event_txtfd" placeholder="Ärzte, Frequency, ...">
-		</div>
-      </div>
+    <form class="form-horizontal margin_top_50" role="form">
+        <div class="col-xs-offset-1 col-xs-10">
+            <h3 class="form_header green_text">What have you lost?</h3>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-1 col-xs-10">
+			<input type="text" class="form-control form_box" id="description" placeholder="Description ...">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-1 col-xs-10">
+                <select class="form-control form_box" id="category_drpd">
+				<option value="" disabled selected>Category ...</option>
+					<option>Clothes</option>
+					<option>Glasses</option>
+					<option>Jewellery</option>
+                    <option>Key</option>
+                    <option>Phone</option>
+                    <option>Wallet</option>
+					<option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-offset-1 col-xs-10 margin_top_50">
+            <h3 class="form_header green_text">Where and When was that?</h3>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-1 col-xs-10">
+                <input type="text" class="form-control form_box" id="venue" placeholder="Venue ...">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-1 col-xs-10">
+                <input type="date" class="form-control form_box" id="date_dtfd" max="2015-12-18" placeholder="Date (tt/mm/yyyy)">
+                <!-- Max Datum angeben - kein Datum in der Zukunft - ham mal Abgabedatum verwendet - Datepicker wird in Chrome angezeigt! -->
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-1 col-xs-10">
+                <input type="text" class="form-control form_box" id="event_txtfd" placeholder="Event ...">
+            </div>
+        </div>
     </form>
-	<div class="btn_container">
-		<button onclick="location.href='found_contact.html'" class="btn green_bg btn_submit" role="button">CONTINUE</button>
+	<div class="row">
+	<div class="col-xs-offset-1 col-xs-10 btn_container">
+		<button onclick="location.href='found_contact.html'" class="btn green_bg btn_submit btn-block" role="button">CONTINUE</button>
 	</div>
-  </body>
+	</div>
+	</body>
+	
+  
 </html>

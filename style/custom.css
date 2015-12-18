@@ -63,7 +63,7 @@ BUTTONS
 
 .btn_container {
 	position: fixed;
-	top: 615px;
+	top: 700px;
 	left: 0;
 }
 
@@ -148,13 +148,22 @@ TEXTS
 	color: #FFC000;
 }
 
-.found_item{
-	
+.found_item_desc{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.found_item_place{
+	font-size: 1.3em;
 }
 
 .jumbotron-custom {
     border-style: solid;
     border-color: #71CD71;
+}
+
+.navi_txt{
+	font-weight: bold;
 }
 
 /*************

@@ -11,9 +11,45 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/custom.css" type="text/css" >
+	<script>
+	$(document).ready(function() {
+		$("#event_contact").hide();
+		
+		$("#number_txtfd").on("keyup",function(){
+			if($("#number_txtfd").val().length == 0){
+				$("#call_chkbx").prop("checked",false);	
+				} else {
+				$("#call_chkbx").prop("checked",true);	
+				}
+		});
+		$("#email_txtfd").on("keyup",function(){
+			if($("#email_txtfd").val().length == 0){
+				$("#email_chkbx").prop("checked",false);	
+				} else {
+				$("#email_chkbx").prop("checked",true);	
+				}
+		});
+		
+		$("#radio_myself").change(function(){
+			if( $("#radio_myself").is(":checked")){
+				$("#myself_contact").show();
+				$("#event_contact").hide();
+			}
+		});
+		
+		$("#radio_event").change(function(){
+			if( $("#radio_event").is(":checked")){
+				$("#myself_contact").hide();
+				$("#event_contact").show();
+			}
+		});
+		
+		
+	});
+	</script>
 </head>
 	<body>
-	  <div class="row">
+	 <div class="row">
       <div class="col-xs-6 text-center green_bg" onclick="location.href='found.html'"><h3 class="navi_txt">Item</h3></div>
       <div class="col-xs-6 text-center green_text" ><h3 class="navi_txt">Contact</h3></div>
     </div>
@@ -25,24 +61,29 @@
             </div>
             <div class="container-fluid">
                 <div class="radio">
-                    <label><input type="radio" name="optradio">Event Location / Organiser</label>
+                    <label><input type="radio" name="optradio" id="radio_event">Event Location / Organiser</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio">Myself</label>
+                    <label><input type="radio" name="optradio" id="radio_myself" checked="checked">Myself</label>
                 </div>
             </div>
         </div>
-        <div class="container-fluid padding-top-30">
+        <div class="container-fluid padding-top-30" >
             <div class="container-fluid jumbotron-custom padding-bottom-20 margin-right-left">
-                <h3 class="green_text padding-bottom-20">Method of Contact</h3>
-                <div class="container-fluid row">
-                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox" value="">Call</label></div>
-                    <div class="col-xs-10"><input type="text" class="form-control form_box" id="number_txtfd" placeholder="+43..."></div>
-                </div>
-                <div class="container-fluid row margin-top-10">
-                    <div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox" value="">Email</label></div>
-                    <div class="col-xs-10"><input type="text" class="form-control form_box" id="email_txtfd" placeholder="Email Address"></div>
-                </div>
+				<div id="myself_contact">
+					<h3 class="green_text padding-bottom-20">Method of Contact</h3>
+					<div class="container-fluid row">
+						<div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox" value="" id="call_chkbx">Call</label></div>
+						<div class="col-xs-10"><input type="tel" class="form-control form_box" id="number_txtfd" placeholder="+43..."></div>
+					</div>
+					<div class="container-fluid row margin-top-10">
+						<div class="col-xs-2"><label class="checkbox-inline"><input type="checkbox" value="" id="email_chkbx">Email</label></div>
+						<div class="col-xs-10"><input type="email" class="form-control form_box" id="email_txtfd" placeholder="Email Address"></div>
+					</div>
+				</div>
+				<div id="event_contact">
+				<h3 class="green_text padding-bottom-20">PLACEHOLDER</h3>
+				</div>
             </div>
         </div>
     </form>
@@ -55,5 +96,6 @@
 		<button onclick="location.href='found_submitted.html'" class="btn green_bg btn_submit btn-block no_left_margin" role="button">SUBMIT</button>
 	</div>
 	</div>
+	
 	</body>
 </html>

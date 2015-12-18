@@ -205,9 +205,14 @@ INDEX (green)
 	color: #98acba;
 }
 
+.index_found:hover{
+	color: #98acba;
+}
+
 .index_lost{
 	background-color: #98acba;
 }
+
 
 .index_bg{
 	background-color: #98acba;

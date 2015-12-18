@@ -174,7 +174,8 @@ TEXTS
 
 .jumbotron-custom {
     border-style: solid;
-    border-color: #71CD71;
+    border-color: #70AD47;
+	
 }
 
 .navi_txt{
@@ -211,6 +212,11 @@ PADDING
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.margin_top_58{
+	margin-top: 58px;
+}
+
 
 .table-custom {
     padding-top: 20px;
@@ -317,7 +323,7 @@ INDEX (b)
 	margin-right: auto;
 }
 	
-.container-fluid{
+.container-fluid-zero-padding{
 	padding-right: 0px;
 	padding-left: 0px;
 }

@@ -1,6 +1,7 @@
 /*Custom Style*/
 
 
+
 /*************
 
 BUTTONS 
@@ -176,4 +177,38 @@ PADDING
 .form-horizontal .control-label {
 	text-align: right;
 	padding-top: 6px;
+}
+
+
+/*************
+
+FOUND (green) 
+
+*************/
+
+.green_bg{
+	background-color: #b1db87; 	
+	color: #ffffff;
+}
+
+.green_text{
+	color: #b1db87; 	
+}
+
+/*************
+
+INDEX (green) 
+
+*************/
+
+.index_found{
+	color: #98acba;
+}
+
+.index_lost{
+	background-color: #98acba;
+}
+
+.index_bg{
+	background-color: #98acba;
 }

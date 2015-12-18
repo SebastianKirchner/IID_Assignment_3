@@ -296,3 +296,15 @@ INDEX (b)
 .index_bg{
 	background-color: #5B9BD5;
 }
+
+.row{
+	
+  margin-right: Auto;
+  margin-left: Auto;
+}
+ 
+.form-horizontal .form-group{
+	margin-left: auto;
+	margin-right: auto;
+}
+	
